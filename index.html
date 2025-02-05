@@ -5,18 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unbound Library</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="include.js"></script>
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-    
-    <!-- Navbar -->
-    <nav class="bg-white dark:bg-gray-800 shadow-md p-4 flex justify-between">
-        <h1 class="text-2xl font-bold"><a href="index.html" class="hover:underline">📚 Unbound Library</a></h1>
-        <ul class="flex space-x-4">
-            <li><a href="index.html" class="hover:underline">Home</a></li>
-            <li><a href="downloads.html" class="hover:underline">Downloads</a></li>
-            <li><a href="how-to-use.html" class="hover:underline">How to Use</a></li>
-        </ul>
-    </nav>
+
+    <div id="header"></div>
+    <script>loadComponent('header.html', 'header');</script>
 
     <!-- Hero Section -->
     <header class="text-center p-10">
@@ -63,34 +57,32 @@
     </section>
 
     <!-- Featured Downloads -->
-<section class="p-6">
-    <h2 class="text-2xl font-bold mb-4 text-center">Featured Literature</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow-md text-center">
-            <a href="assets/downloads/1984-by-george-orwell.pdf" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/cover-1984.jpg" alt="1984 Book Cover" class="w-full h-auto max-h-60 object-contain aspect-square rounded">
-            </a>
-            <h3 class="text-xl font-semibold mt-2">1984 by George Orwell</h3>
-            <a href="assets/downloads/1984-by-george-orwell.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">📥 Download (9.4 MB)</a>
+    <section class="p-6">
+        <h2 class="text-2xl font-bold mb-4 text-center">Featured Literature</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white dark:bg-gray-800 p-4 rounded shadow-md text-center">
+                <a href="assets/downloads/1984-by-george-orwell.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-1984.jpg" alt="1984 Book Cover" class="w-full h-auto max-h-60 object-contain aspect-square rounded">
+                </a>
+                <h3 class="text-xl font-semibold mt-2">1984 by George Orwell</h3>
+                <a href="assets/downloads/1984-by-george-orwell.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">📥 Download (9.4 MB)</a>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-4 rounded shadow-md text-center">
+                <a href="assets/downloads/fahrenheit-451-by-ray-bradbury.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-fahrenheit-451.jpg" alt="Fahrenheit 451 Book Cover" class="w-full h-auto max-h-60 object-contain aspect-square rounded">
+                </a>
+                <h3 class="text-xl font-semibold mt-2">Fahrenheit 451 by Ray Bradbury</h3>
+                <a href="assets/downloads/fahrenheit-451-by-ray-bradbury.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">📥 Download (952 KB)</a>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-4 rounded shadow-md text-center">
+                <a href="assets/downloads/animal-farm-by-george-orwell.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-animal-farm.jpg" alt="Animal Farm Book Cover" class="w-full h-auto max-h-60 object-contain aspect-square rounded">
+                </a>
+                <h3 class="text-xl font-semibold mt-2">Animal Farm by George Orwell</h3>
+                <a href="assets/downloads/animal-farm-by-george-orwell.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">📥 Download (1.4 MB)</a>
+            </div>
         </div>
-        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow-md text-center">
-            <a href="assets/downloads/fahrenheit-451-by-ray-bradbury.pdf" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/cover-fahrenheit-451.jpg" alt="Fahrenheit 451 Book Cover" class="w-full h-auto max-h-60 object-contain aspect-square rounded">
-            </a>
-            <h3 class="text-xl font-semibold mt-2">Fahrenheit 451 by Ray Bradbury</h3>
-            <a href="assets/downloads/fahrenheit-451-by-ray-bradbury.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">📥 Download (952 KB)</a>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow-md text-center">
-            <a href="assets/downloads/animal-farm-by-george-orwell.pdf" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/cover-animal-farm.jpg" alt="Animal Farm Book Cover" class="w-full h-auto max-h-60 object-contain aspect-square rounded">
-            </a>
-            <h3 class="text-xl font-semibold mt-2">Animal Farm by George Orwell</h3>
-            <a href="assets/downloads/animal-farm-by-george-orwell.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">📥 Download (1.4 MB)</a>
-        </div>
-    </div>
-</section>
-
-
+    </section>
 
     <!-- Featured Guides & Resources -->
     <section class="p-6">
@@ -100,13 +92,10 @@
             <li><a href="assets/downloads/community-gardening-guide.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">Community Gardening Guide</a></li>
             <li><a href="assets/downloads/how-to-change-a-tire-guide.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">How to Change a Tire Guide</a></li>
         </ul>
-    </section>    
+    </section>
 
-    <!-- Footer -->
-    <footer class="bg-white dark:bg-gray-800 p-4 mt-6 text-center flex justify-center space-x-6">
-        <p>📚 Unbound Library - Sharing Knowledge with the Community</p>
-        <a href="about.html" class="text-blue-500 hover:underline">About</a>
-        <a href="support-us.html" class="text-blue-500 hover:underline">Support Us</a>
-    </footer>
+    <div id="footer"></div>
+    <script>loadComponent('footer.html', 'footer');</script>
+
 </body>
 </html>
