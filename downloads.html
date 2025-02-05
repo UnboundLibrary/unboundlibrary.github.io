@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads - Unbound Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    
+    <!-- Navbar -->
+    <nav class="bg-white dark:bg-gray-800 shadow-md p-4 flex justify-between">
+        <h1 class="text-2xl font-bold"><a href="index.html" class="hover:underline">📚 Unbound Library</a></h1>
+        <ul class="flex space-x-4">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="downloads.html" class="hover:underline">Downloads</a></li>
+            <li><a href="how-to-use.html" class="hover:underline">How to Use</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero/Featured Section -->
+    <header class="text-center p-6">
+        <h2 class="text-3xl font-bold mb-4">Explore Key Categories</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <button class="category-filter bg-white dark:bg-gray-800 p-4 rounded shadow-md" data-category="preparedness">
+                <h3 class="text-xl font-semibold">📖 Preparedness Guides</h3>
+                <p class="text-gray-600 dark:text-gray-300">Learn how to stay prepared for any emergency.</p>
+            </button>
+            <button class="category-filter bg-white dark:bg-gray-800 p-4 rounded shadow-md" data-category="gardening">
+                <h3 class="text-xl font-semibold">🌱 Gardening & Sustainability</h3>
+                <p class="text-gray-600 dark:text-gray-300">Discover tips for growing food and creating resilient systems.</p>
+            </button>
+            <button class="category-filter bg-white dark:bg-gray-800 p-4 rounded shadow-md" data-category="howto">
+                <h3 class="text-xl font-semibold">🛠️ How-To & DIY</h3>
+                <p class="text-gray-600 dark:text-gray-300">Step-by-step guides to solving problems.</p>
+            </button>
+            <button class="category-filter bg-white dark:bg-gray-800 p-4 rounded shadow-md" data-category="history">
+                <h3 class="text-xl font-semibold">📜 Historical Documents</h3>
+                <p class="text-gray-600 dark:text-gray-300">Key texts and archives from history.</p>
+            </button>
+            <button class="category-filter bg-white dark:bg-gray-800 p-4 rounded shadow-md" data-category="awareness">
+                <h3 class="text-xl font-semibold">⚖️ Awareness</h3>
+                <p class="text-gray-600 dark:text-gray-300">Know your rights and civic responsibilities.</p>
+            </button>
+            <button class="category-filter bg-white dark:bg-gray-800 p-4 rounded shadow-md" data-category="literature">
+                <h3 class="text-xl font-semibold">📚 Literature</h3>
+                <p class="text-gray-600 dark:text-gray-300">Classic books to expand your perspective.</p>
+            </button>
+        </div>
+    </header>
+
+    <!-- Search Bar with Grid/List View Toggle -->
+    <div class="p-6 flex justify-center gap-4 items-center">
+        <input type="text" id="search" placeholder="Search resources..." class="p-2 w-2/3 md:w-1/2 rounded border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <button id="grid-view" class="px-4 py-2 bg-blue-500 text-white rounded">Grid View</button>
+        <button id="list-view" class="px-4 py-2 bg-gray-300 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded">List View</button>
+    </div>
+
+    <!-- Main Download Section -->
+    <section id="downloads" class="p-6">
+        <h2 class="text-2xl font-bold mb-4">All Downloads</h2>
+        <div id="resources-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="preparedness">
+                <img src="cover_basic_preparedness.jpg" alt="Basic Preparedness Guide Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Basic Preparedness Guide</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">An essential guide for emergency readiness and planning.</p>
+                    <span class="block text-sm text-gray-500">PDF • 9.4MB</span>
+                    <a href="assets/downloads/Basic Preparedness Guide.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="gardening">
+                <img src="cover_new_orleans_plant_guide.jpg" alt="New Orleans Plant Guide Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">New Orleans Plant Guide</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">A comprehensive guide to native plants in New Orleans.</p>
+                    <span class="block text-sm text-gray-500">PDF • 7.6MB</span>
+                    <a href="assets/downloads/New Orleans Plant Guide.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="literature">
+                <img src="cover_animal_farm.jpg" alt="Animal Farm Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Animal Farm by George Orwell</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">A political allegory depicting the perils of totalitarianism.</p>
+                    <span class="block text-sm text-gray-500">PDF • 5MB</span>
+                    <a href="assets/downloads/Animal Farm by George Orwell.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="gardening">
+                <img src="cover_community_gardening.jpg" alt="Community Gardening Guide Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Community Gardening Guide</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Learn how to create and maintain community gardens.</p>
+                    <span class="block text-sm text-gray-500">PDF • 4.7MB</span>
+                    <a href="assets/downloads/Community Gardening Guide.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="awareness">
+                <img src="cover_data_detox.jpg" alt="Data Detox Kit Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Data Detox Kit</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">A guide to reclaiming your digital privacy and security.</p>
+                    <span class="block text-sm text-gray-500">PDF • 4.2MB</span>
+                    <a href="assets/downloads/Data Detox Kit.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="preparedness">
+                <img src="cover_us_army_survival.jpg" alt="US Army Survival Manual Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">FM21-76 US Army Survival Manual</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">The official survival guide used by the U.S. Army.</p>
+                    <span class="block text-sm text-gray-500">PDF • 3MB</span>
+                    <a href="assets/downloads/FM21-76 US Army Survival Manual.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="gardening">
+                <img src="cover_louisiana_vegetable_planting.jpg" alt="Louisiana Vegetable Planting Guide Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Louisiana Vegetable Planting Guide</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Seasonal planting tips for Louisiana gardeners.</p>
+                    <span class="block text-sm text-gray-500">PDF • 2.9MB</span>
+                    <a href="assets/downloads/Louisiana Vegetable Planting Guide.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="history">
+                <img src="cover_federalist_papers.jpg" alt="Federalist Papers Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">The Federalist Papers</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Essays advocating for the U.S. Constitution by Hamilton, Madison, and Jay.</p>
+                    <span class="block text-sm text-gray-500">PDF • 2.7MB</span>
+                    <a href="assets/downloads/The Federalist Papers, by Alexander Hamilton, John Jay, and James Madison.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="gardening">
+                <img src="cover_resiliency_community_gardening.jpg" alt="Community Gardening Manual Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Resiliency - Community Gardening Manual</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Building resilient communities through gardening.</p>
+                    <span class="block text-sm text-gray-500">PDF • 2.6MB</span>
+                    <a href="assets/downloads/Resiliency - Community Gardening Manual.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="awareness">
+                <img src="cover_on_tyranny.jpg" alt="On Tyranny Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">On Tyranny - Timothy Snyder</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Lessons from history on resisting authoritarianism.</p>
+                    <span class="block text-sm text-gray-500">PDF • 2.6MB</span>
+                    <a href="assets/downloads/On Tyranny - Timothy Snyder.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="awareness">
+                <img src="cover_digital_minimalism.jpg" alt="Digital Minimalism Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Digital Minimalism - Cal Newport</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Finding focus in a noisy digital world.</p>
+                    <span class="block text-sm text-gray-500">PDF • 2.4MB</span>
+                    <a href="assets/downloads/Digital Minimalism by Cal Newport.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="howto">
+                <img src="cover_diy_rainwater.jpg" alt="DIY Rainwater Guide Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">DIY Rainwater Collection Guide</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Step-by-step guide to building your own rainwater system.</p>
+                    <span class="block text-sm text-gray-500">PDF • 2MB</span>
+                    <a href="assets/downloads/DIY Rainwater Collection Guide.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="history">
+                <img src="cover_common_sense.jpg" alt="Common Sense Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Common Sense by Thomas Paine</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">A revolutionary pamphlet advocating independence.</p>
+                    <span class="block text-sm text-gray-500">PDF • 1.7MB</span>
+                    <a href="assets/downloads/Common Sense by Thomas Paine.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="history">
+                <img src="cover_declaration_constitution.jpg" alt="Declaration and Constitution Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Declaration of Independence + Constitution</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Foundational documents of U.S. governance.</p>
+                    <span class="block text-sm text-gray-500">PDF • 1.5MB</span>
+                    <a href="assets/downloads/Declaration of Independence + Constitution.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="gardening">
+                <img src="cover_native_plants_coastal.jpg" alt="Native Plants Coastal Louisiana Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Native Plants of Coastal Louisiana Guide</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">A guide to plants native to Louisiana's coastlines.</p>
+                    <span class="block text-sm text-gray-500">PDF • 1.4MB</span>
+                    <a href="assets/downloads/Native Plants of Coastal Louisiana Guide.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="literature">
+                <img src="cover_1984.jpg" alt="1984 Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">1984 by George Orwell</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">A dystopian classic about totalitarianism.</p>
+                    <span class="block text-sm text-gray-500">PDF • 1.3MB</span>
+                    <a href="assets/downloads/1984 by George Orwell.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="gardening">
+                <img src="cover_louisiana_native_plants.jpg" alt="Louisiana Native Plants Guide Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Louisiana Native Plant Resource Guide</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Comprehensive guide to native plants in Louisiana.</p>
+                    <span class="block text-sm text-gray-500">PDF • 1.2MB</span>
+                    <a href="assets/downloads/Louisiana Native Plant Resource Guide.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="awareness">
+                <img src="cover_data_detox_voters.jpg" alt="Data Detox Voters Guide Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Data Detox Voters Guide</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">A guide to digital literacy for informed voting.</p>
+                    <span class="block text-sm text-gray-500">PDF • 1MB</span>
+                    <a href="assets/downloads/Data Detox Voters Guide.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="history">
+                <img src="cover_us_constitution.jpg" alt="US Constitution Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">United States Constitution</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">The supreme law of the United States.</p>
+                    <span class="block text-sm text-gray-500">PDF • 1MB</span>
+                    <a href="assets/downloads/United States Constitution.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="awareness">
+                <img src="cover_data_detox_youth.jpg" alt="Data Detox Youth Guide Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Data Detox Youth Guide</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Digital detox guide tailored for young audiences.</p>
+                    <span class="block text-sm text-gray-500">PDF • 952KB</span>
+                    <a href="assets/downloads/Data Detox Youth Guide.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="literature">
+                <img src="cover_fahrenheit_451.jpg" alt="Fahrenheit 451 Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Fahrenheit 451 by Ray Bradbury</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">A dystopian tale about censorship and freedom of thought.</p>
+                    <span class="block text-sm text-gray-500">PDF • 667KB</span>
+                    <a href="assets/downloads/Fahrenheit 451 by Ray Bradbury.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="preparedness">
+                <img src="cover_family_emergency.jpg" alt="Family Emergency Checklist Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Family Emergency Checklist</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">A quick checklist for family preparedness in emergencies.</p>
+                    <span class="block text-sm text-gray-500">PDF • 469KB</span>
+                    <a href="assets/downloads/Family Emergency Checklist.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="howto">
+                <img src="cover_change_tire.jpg" alt="How to Change a Tire Guide Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">How to Change a Tire Guide</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Step-by-step guide to changing a flat tire.</p>
+                    <span class="block text-sm text-gray-500">PDF • 281KB</span>
+                    <a href="assets/downloads/How to Change a Tire Guide.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="preparedness">
+                <img src="cover_emergency_preparedness.jpg" alt="Emergency Preparedness Checklist Cover" class="w-24 h-24 object-cover rounded">
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Emergency Preparedness Checklist</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Step-by-step guide to changing a flat tire.</p>
+                    <span class="block text-sm text-gray-500">PDF • 42KB</span>
+                    <a href="assets/downloads/Emergency Preparedness Checklist.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📅 Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-800 p-4 mt-6 text-center">
+        <p>📚 Unbound Library - Sharing Knowledge with the Community</p>
+        <a href="about.html" class="text-blue-500 hover:underline">About</a>
+    </footer>
+
+    <script>
+        const searchInput = document.getElementById("search");
+        const resourcesGrid = document.getElementById("resources-grid");
+        const gridViewButton = document.getElementById("grid-view");
+        const listViewButton = document.getElementById("list-view");
+        const categoryFilters = document.querySelectorAll(".category-filter");
+
+        searchInput.addEventListener("input", (e) => {
+            const filter = e.target.value.toLowerCase();
+            const items = resourcesGrid.querySelectorAll(".resource-item");
+            
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(filter) ? "flex" : "none";
+            });
+        });
+
+        gridViewButton.addEventListener("click", () => {
+            resourcesGrid.classList.remove("list-view");
+            resourcesGrid.classList.add("grid", "grid-cols-1", "md:grid-cols-3");
+        });
+
+        listViewButton.addEventListener("click", () => {
+            resourcesGrid.classList.remove("grid", "grid-cols-1", "md:grid-cols-3");
+            resourcesGrid.classList.add("flex", "flex-col", "gap-2");
+            document.querySelectorAll(".resource-item").forEach(item => {
+                item.classList.add("flex-row", "items-center", "gap-4", "p-2", "border", "border-gray-300", "dark:border-gray-700");
+                item.querySelector("img").classList.add("w-16", "h-16");
+            });
+        });
+
+        categoryFilters.forEach(button => {
+            button.addEventListener("click", () => {
+                const category = button.dataset.category;
+                document.querySelectorAll(".resource-item").forEach(item => {
+                    item.style.display = item.dataset.category === category ? "flex" : "none";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
