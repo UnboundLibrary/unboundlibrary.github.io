@@ -43,12 +43,21 @@
         </div>
     </header>
 
-    <!-- Search Bar with Grid/List View Toggle -->
-    <div class="p-6 flex justify-center gap-4 items-center">
-        <input type="text" id="search" placeholder="Search resources..." class="p-2 w-2/3 md:w-1/2 rounded border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
-        <button id="grid-view" class="px-4 py-2 bg-blue-500 text-white rounded">Grid View</button>
-        <button id="list-view" class="px-4 py-2 bg-gray-300 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded">List View</button>
+    <!-- Search Bar Container -->
+    <div class="p-6 flex justify-center items-center gap-2">
+        <div class="relative w-2/3 md:w-1/2">
+            <input type="text" id="search" placeholder="Search resources..." 
+                class="p-2 w-full rounded bg-gray-800 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <button id="clearSearch" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white hidden">
+                ✖
+            </button>
+        </div>
+        <button id="grid-view" class="px-4 py-2 bg-blue-500 text-white rounded">Grid</button>
+        <button id="list-view" class="px-4 py-2 bg-gray-700 text-white rounded">List</button>
     </div>
+
+    <!-- No Results Message -->
+    <p id="noResults" class="text-center text-gray-500 hidden">No matching resources found.</p>
 
     <!-- Main Download Section -->
     <section id="downloads" class="p-6">
@@ -310,66 +319,7 @@
     <div id="footer"></div>
     <script>loadComponent('footer.html', 'footer');</script>
 
-    <script>
-        const searchInput = document.getElementById("search");
-        const resourcesGrid = document.getElementById("resources-grid");
-        const gridViewButton = document.getElementById("grid-view");
-        const listViewButton = document.getElementById("list-view");
-        const categoryFilters = document.querySelectorAll(".category-filter");
-
-        searchInput.addEventListener("input", (e) => {
-            const filter = e.target.value.toLowerCase();
-            const items = resourcesGrid.querySelectorAll(".resource-item");
-            
-            items.forEach(item => {
-                const text = item.textContent.toLowerCase();
-                item.style.display = text.includes(filter) ? "flex" : "none";
-            });
-        });
-
-        gridViewButton.addEventListener("click", () => {
-            resourcesGrid.classList.remove("list-view");
-            resourcesGrid.classList.add("grid", "grid-cols-1", "md:grid-cols-3");
-        });
-
-        listViewButton.addEventListener("click", () => {
-            resourcesGrid.classList.remove("grid", "grid-cols-1", "md:grid-cols-3");
-            resourcesGrid.classList.add("flex", "flex-col", "gap-2");
-            document.querySelectorAll(".resource-item").forEach(item => {
-                item.classList.add("flex-row", "items-center", "gap-4", "p-2", "border", "border-gray-300", "dark:border-gray-700");
-                item.querySelector("img").classList.add("w-16", "h-16");
-            });
-        });
-
-        categoryFilters.forEach(button => {
-            button.addEventListener("click", () => {
-                const category = button.dataset.category;
-                document.querySelectorAll(".resource-item").forEach(item => {
-                    item.style.display = item.dataset.category === category ? "flex" : "none";
-                });
-            });
-        });
-    </script>
-    <script> // Filter content based on the hash
-        document.addEventListener("DOMContentLoaded", function () {
-            const categoryHash = window.location.hash.substring(1); // Get hash without "#"
-            if (categoryHash) {
-                filterByCategory(categoryHash);
-            }
-        });
-    
-        function filterByCategory(category) {
-            const items = document.querySelectorAll(".resource-item");
-    
-            items.forEach(item => {
-                if (item.dataset.category === category || category === "all") {
-                    item.style.display = "flex"; // Show matched items
-                } else {
-                    item.style.display = "none"; // Hide others
-                }
-            });
-        }
-    </script>
+    <script src="search.js"></script>
     
 </body>
 </html>
