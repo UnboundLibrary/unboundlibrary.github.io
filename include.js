@@ -13,7 +13,7 @@ function loadComponent(file, elementId) {
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll("img").forEach(img => {
         img.onerror = function() {
-            this.src = "assets/images/placeholder.jpg";
+            this.src = "https://unboundlibrary.org/assets/images/placeholder.jpg";
             this.onerror = null; // Prevent infinite loop
         };
     });
