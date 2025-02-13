@@ -7,6 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="include.js"></script>
 </head>
+<script src="analytics.js"></script>
+
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
     
     <div id="header"></div>
@@ -62,7 +64,217 @@
     <!-- Main Download Section -->
     <section id="downloads" class="p-6">
         <h2 class="text-2xl font-bold mb-4">All Downloads</h2>
+
         <div id="resources-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- In Progress Addition 
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="general">
+                <a href="assets/downloads/general/camping-recipes.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-camping-recipes.jpg" alt="Camping Recipes cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Camping Recipes</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Easy outdoor cooking and meal ideas.</p>
+                    <span class="block text-sm text-gray-500">PDF • 1.5MB</span>
+                    <a href="assets/downloads/general/camping-recipes.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="general">
+                <a href="assets/downloads/general/personal-hygiene-practices.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-personal-hygiene-practices.jpg" alt="Personal Hygiene Practices cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Personal Hygiene Practices</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Maintaining cleanliness and health essentials.</p>
+                    <span class="block text-sm text-gray-500">PDF • 97KB</span>
+                    <a href="assets/downloads/general/personal-hygiene-practices.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="howto">
+                <a href="assets/downloads/howto/crawfords-auto-repair-guide.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-crawfords-auto-repair-guide.jpg" alt="Crawford's Auto Repair Guide cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Crawford's Auto Repair Guide</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Essential car maintenance and troubleshooting.</p>
+                    <span class="block text-sm text-gray-500">PDF • 4.6MB</span>
+                    <a href="assets/downloads/howto/crawfords-auto-repair-guide.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="howto">
+                <a href="assets/downloads/howto/home-maintenance-manual.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-home-maintenance-manual.jpg" alt="Home Maintenance Manual cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Home Maintenance Manual</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Upkeep and repair tips for homeowners.</p>
+                    <span class="block text-sm text-gray-500">PDF • 1.3MB</span>
+                    <a href="assets/downloads/howto/home-maintenance-manual.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="howto">
+                <a href="assets/downloads/howto/home-maintenance-checklist.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-home-maintenance-checklist.jpg" alt="Home Maintenance Checklist cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Home Maintenance Checklist</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Routine home inspections and maintenance tasks.</p>
+                    <span class="block text-sm text-gray-500">PDF • 1MB</span>
+                    <a href="assets/downloads/howto/home-maintenance-checklist.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="howto">
+                <a href="assets/downloads/howto/home-inspection-checklist.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-home-inspection-checklist.jpg" alt="Home Inspection Checklist cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Home Inspection Checklist</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Guide for checking home condition and safety.</p>
+                    <span class="block text-sm text-gray-500">PDF • 1MB</span>
+                    <a href="assets/downloads/howto/home-inspection-checklist.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="howto">
+                <a href="assets/downloads/howto/make-yourself-at-home-habitat-for-humanity.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-make-yourself-at-home-habitat-for-humanity.jpg" alt="Make Yourself at Home cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Make Yourself at Home (Habitat for Humanity)</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Affordable housing tips and resources.</p>
+                    <span class="block text-sm text-gray-500">PDF • 647KB</span>
+                    <a href="assets/downloads/howto/make-yourself-at-home-habitat-for-humanity.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="new-orleans">
+                <a href="assets/downloads/new-orleans/rta-new-orleans-system-map-2025.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-rta-new-orleans-system-map-2025.jpg" alt="RTA New Orleans System Map 2025 cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">RTA New Orleans System Map 2025</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Public transit routes and schedules.</p>
+                    <span class="block text-sm text-gray-500">PDF • 4.9MB</span>
+                    <a href="assets/downloads/new-orleans/rta-new-orleans-system-map-2025.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="new-orleans">
+                <a href="assets/downloads/new-orleans/new-orleans-bike-map-guide.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-new-orleans-bike-map-guide.jpg" alt="New Orleans Bike Map Guide cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">New Orleans Bike Map Guide</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Cycling routes and bike-friendly areas.</p>
+                    <span class="block text-sm text-gray-500">PDF • 2.9MB</span>
+                    <a href="assets/downloads/new-orleans/new-orleans-bike-map-guide.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="new-orleans">
+                <a href="assets/downloads/new-orleans/bicycle-trails-greater-new-orleans.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-bicycle-trails-greater-new-orleans.jpg" alt="Bicycle Trails Greater New Orleans cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Bicycle Trails Greater New Orleans</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Scenic and practical biking paths.</p>
+                    <span class="block text-sm text-gray-500">PDF • 829KB</span>
+                    <a href="assets/downloads/new-orleans/bicycle-trails-greater-new-orleans.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="preparedness">
+                <a href="assets/downloads/preparedness/fema-citizen-preparedness.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-fema-citizen-preparedness.jpg" alt="FEMA Citizen Preparedness cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">FEMA Citizen Preparedness</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Government disaster readiness and safety tips.</p>
+                    <span class="block text-sm text-gray-500">PDF • 4.2MB</span>
+                    <a href="assets/downloads/preparedness/fema-citizen-preparedness.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="preparedness">
+                <a href="assets/downloads/preparedness/water-treatment-for-dummies.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-water-treatment-for-dummies.jpg" alt="Water Treatment for Dummies cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Water Treatment for Dummies</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Purifying water for drinking and emergencies.</p>
+                    <span class="block text-sm text-gray-500">PDF • 2.2MB</span>
+                    <a href="assets/downloads/preparedness/water-treatment-for-dummies.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="preparedness">
+                <a href="assets/downloads/preparedness/fm21-11-first-aid-for-soldiers.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-fm21-11-first-aid-for-soldiers.jpg" alt="FM 21-11 First Aid for Soldiers cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">FM 21-11 First Aid for Soldiers</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Military first aid training and procedures.</p>
+                    <span class="block text-sm text-gray-500">PDF • 2MB</span>
+                    <a href="assets/downloads/preparedness/fm21-11-first-aid-for-soldiers.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="preparedness">
+                <a href="assets/downloads/preparedness/disaster-and-emergency-72-hour-self-reliance.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-disaster-and-emergency-72-hour-self-reliance.jpg" alt="Disaster and Emergency 72-Hour Self-Reliance cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Disaster and Emergency 72-Hour Self-Reliance</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Surviving the first days of a crisis.</p>
+                    <span class="block text-sm text-gray-500">PDF • 726KB</span>
+                    <a href="assets/downloads/preparedness/disaster-and-emergency-72-hour-self-reliance.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="preparedness">
+                <a href="assets/downloads/preparedness/fema-food-and-water-in-an-emergency.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-fema-food-and-water-in-an-emergency.jpg" alt="FEMA Food and Water in an Emergency cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">FEMA Food and Water in an Emergency</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Guidelines for emergency food and water storage.</p>
+                    <span class="block text-sm text-gray-500">PDF • 603KB</span>
+                    <a href="assets/downloads/preparedness/fema-food-and-water-in-an-emergency.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="weather">
+                <a href="assets/downloads/weather/owlie-storms-ahead.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-owlie-storms-ahead.jpg" alt="Owlie: Storms Ahead cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Owlie: Storms Ahead</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">NOAA children's guide to storm safety.</p>
+                    <span class="block text-sm text-gray-500">PDF • 1.7MB</span>
+                    <a href="assets/downloads/weather/owlie-storms-ahead.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="weather">
+                <a href="assets/downloads/weather/noaa-cloudchart_front.jpg" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-noaa-cloudchart_front.jpg" alt="NOAA Cloud Chart cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">NOAA Cloud Chart</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Identifying clouds and predicting weather.</p>
+                    <span class="block text-sm text-gray-500">JPG • 647KB</span>
+                    <a href="assets/downloads/weather/noaa-cloudchart_front.jpg" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+        -->
+
+
+            
+<!-- correct -->
 
             <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="preparedness">
                 <a href="assets/downloads/preparedness/nato-phonetic-alphabet-codes-and-signals.pdf" target="_blank" rel="noopener noreferrer">
