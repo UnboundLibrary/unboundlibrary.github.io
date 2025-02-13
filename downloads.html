@@ -21,6 +21,7 @@
     
     <div id="header"></div>
     <script>loadComponent('header.html', 'header');</script>
+    <script src="totalnumber.js"></script>
 
     <!-- Hero/Featured Section -->
     <header class="text-center p-6">
@@ -71,7 +72,8 @@
 
     <!-- Main Download Section -->
     <section id="downloads" class="p-6">
-        <h2 class="text-2xl font-bold mb-4">All Downloads</h2>
+        <!-- <h2 class="text-2xl font-bold mb-4">All Downloads</h2> -->
+        <h2 class="text-2x1 font-bold mb-4"><span id="totalDownloads">Loading...</span> Available Downloads</h2>
 
         <div id="resources-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
