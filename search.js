@@ -83,3 +83,42 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+
+    function filterByCategory(category) {
+        let items = document.querySelectorAll(".resource-item");
+        let visibleCount = 0;
+
+        items.forEach(item => {
+            let matchesCategory = category === "all" || item.getAttribute("data-category") === category;
+            item.hidden = !matchesCategory;
+
+            if (matchesCategory) visibleCount++;
+        });
+
+        // ✅ Update URL hash when category is selected
+        if (category === "all") {
+            history.pushState(null, null, window.location.pathname);
+        } else {
+            history.pushState(null, null, window.location.pathname + "#" + category);
+        }
+
+        // ✅ Update download count based on visible items
+        document.getElementById("totalDownloads").innerText = visibleCount;
+    }
+
+    // ✅ Apply filter when clicking category buttons
+    document.querySelectorAll(".category-filter").forEach(button => {
+        button.addEventListener("click", function() {
+            let category = this.getAttribute("data-category");
+            filterByCategory(category);
+        });
+    });
+
+    // ✅ Apply category filter from URL when page loads
+    document.addEventListener("DOMContentLoaded", function() {
+        let hashCategory = window.location.hash.substring(1);
+        if (hashCategory) {
+            filterByCategory(hashCategory);
+        }
+    });
