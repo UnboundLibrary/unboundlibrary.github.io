@@ -59,9 +59,21 @@
                 <h3 class="text-xl font-semibold">🚲 Transportation &amp; Mobility</h3>
                 <p class="text-gray-600 dark:text-gray-300">Maps and guides for biking, public transit, and travel.</p>
             </button>
+            <button class="category-filter bg-white dark:bg-gray-800 p-4 rounded shadow-md" data-category="homesteading">
+                <h3 class="text-xl font-semibold">🏡 Homesteading &amp; Self-Sufficiency</h3>
+                <p class="text-gray-600 dark:text-gray-300">Food preservation, raising animals, rural skills.</p>
+            </button>
             <button class="category-filter bg-white dark:bg-gray-800 p-4 rounded shadow-md" data-category="general">
                 <h3 class="text-xl font-semibold">📂 Everyday Knowledge</h3>
                 <p class="text-gray-600 dark:text-gray-300">Practical tips for finance, health, and daily life.</p>
+            </button>
+            <button class="category-filter bg-white dark:bg-gray-800 p-4 rounded shadow-md" data-category="digital-security">
+                <h3 class="text-xl font-semibold">🔒 Digital Security &amp; Privacy (Coming Soon!)</h3>
+                <p class="text-gray-600 dark:text-gray-300">Protect your data, stay anonymous, and secure communications.</p>
+            </button>
+            <button class="category-filter bg-white dark:bg-gray-800 p-4 rounded shadow-md" data-category="handcraft">
+                <h3 class="text-xl font-semibold">🧵 Handcrafting & Skilled Hobbies (Coming Soon!)</h3>
+                <p class="text-gray-600 dark:text-gray-300">Learn traditional crafts, artisan skills, and hands-on hobbies.</p>
             </button>
         </div>
     </header>
@@ -89,10 +101,169 @@
 
         <div id="resources-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-            <!-- 20250215 -->
+            <!-- Template 
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="###">
+                <a href="assets/downloads/###/###.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-###.jpg" alt="### cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">###</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">###.</p>
+                    <span class="block text-sm text-gray-500">PDF • #MB</span>
+                    <a href="assets/downloads/###/###.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            -->
+
+            <!-- 20250220 12 uploads homesteading -->
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="homesteading">
+                <a href="assets/downloads/homesteading/4-h-beekeeping.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-4-h-beekeeping.jpg" alt="4-H Beekeeping cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">4-H Beekeeping</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Beekeeping basics, hive management, honey production, youth-focused guide.</p>
+                    <span class="block text-sm text-gray-500">PDF • 905KB</span>
+                    <a href="assets/downloads/homesteading/4-h-beekeeping.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="homesteading">
+                <a href="assets/downloads/homesteading/basic-beekeeping-operations.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-basic-beekeeping-operations.jpg" alt="Basic Beekeeping Operations cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Basic Beekeeping Operations</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Hive care, colony management, pest control, and honey harvesting.</p>
+                    <span class="block text-sm text-gray-500">PDF • 29KB</span>
+                    <a href="assets/downloads/homesteading/basic-beekeeping-operations.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="homesteading">
+                <a href="assets/downloads/homesteading/beekeeping-basics.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-beekeeping-basics.jpg" alt="Beekeeping Basics cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Beekeeping Basics</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Introduction to beekeeping, hive setup, pollination, and honey production.</p>
+                    <span class="block text-sm text-gray-500">PDF • 177KB</span>
+                    <a href="assets/downloads/homesteading/beekeeping-basics.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="homesteading">
+                <a href="assets/downloads/homesteading/backcountry-sanitation-manual.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-backcountry-sanitation-manual.jpg" alt="Backyard Sanitation Manual cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Backyard Sanitation Manual</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Composting, waste disposal, off-grid sanitation, environmental impact.</p>
+                    <span class="block text-sm text-gray-500">PDF • 1.7MB</span>
+                    <a href="assets/downloads/homesteading/backcountry-sanitation-manual.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="homesteading">
+                <a href="assets/downloads/homesteading/backyard-chickens.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-backyard-chickens.jpg" alt="Backyard Chicken cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Backyard Chicken</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Raising chickens: feeding, housing, care, egg production.</p>
+                    <span class="block text-sm text-gray-500">PDF • 3.4MB</span>
+                    <a href="assets/downloads/homesteading/backyard-chickens.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="homesteading">
+                <a href="assets/downloads/homesteading/basic-components-of-a-rainwater-storage-system.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-basic-components-of-a-rainwater-storage-system.jpg" alt="Basic Components of a Water Storage System cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Basic Components of a Water Storage System</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Collecting, storing, filtering rainwater for homestead use.</p>
+                    <span class="block text-sm text-gray-500">PDF • 1MB</span>
+                    <a href="assets/downloads/homesteading/basic-components-of-a-rainwater-storage-system.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="homesteading">
+                <a href="assets/downloads/homesteading/blacksmiths-guide.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-blacksmiths-guide.jpg" alt="Blacksmith's Guide cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Blacksmith's Guide</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Traditional blacksmithing techniques, tools, forging, and metalworking.</p>
+                    <span class="block text-sm text-gray-500">PDF • 8.9MB</span>
+                    <a href="assets/downloads/homesteading/blacksmiths-guide.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="homesteading">
+                <a href="assets/downloads/homesteading/cheese-making.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-cheese-making.jpg" alt="Cheese Making cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Cheese Making</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Traditional cheesemaking techniques, tools, ingredients, safety tips.</p>
+                    <span class="block text-sm text-gray-500">PDF • 3.1MB</span>
+                    <a href="assets/downloads/homesteading/cheese-making.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="homesteading">
+                <a href="assets/downloads/homesteading/condiments-spices-and-flavors.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-condiments-spices-and-flavors.jpg" alt="Condiments, Spices, and Flavors cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Condiments, Spices, and Flavors</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Historical spice use, preservation, global culinary traditions.</p>
+                    <span class="block text-sm text-gray-500">PDF • 2.2MB</span>
+                    <a href="assets/downloads/homesteading/condiments-spices-and-flavors.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="homesteading">
+                <a href="assets/downloads/homesteading/cooking-canning-cold-storage.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-cooking-canning-cold-storage.jpg" alt="Cooking, Canning, Cold Storage cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Cooking, Canning, Cold Storage</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Food preservation methods, canning techniques, off-grid storage.</p>
+                    <span class="block text-sm text-gray-500">PDF • 1.6MB</span>
+                    <a href="assets/downloads/homesteading/cooking-canning-cold-storage.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="homesteading">
+                <a href="assets/downloads/homesteading/canning-vegetables.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-canning-vegetables.jpg" alt="Canning Vegetables cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Canning Vegetables</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Safe canning methods, preservation techniques, food storage.</p>
+                    <span class="block text-sm text-gray-500">PDF • 184KB</span>
+                    <a href="assets/downloads/homesteading/canning-vegetables.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="homesteading">
+                <a href="assets/downloads/homesteading/drying-vegetables-and-fruits-for-home-use.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/cover-drying-vegetables-and-fruits-for-home-use.jpg" alt="Drying Vegetables & Fruits for Home Use cover" class="w-24 h-24 object-contain rounded">
+                </a>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold">Drying Vegetables & Fruits for Home Use</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Traditional food drying methods & DIY preservation techniques.</p>
+                    <span class="block text-sm text-gray-500">PDF • 1.8MB</span>
+                    <a href="assets/downloads/homesteading/drying-vegetables-and-fruits-for-home-use.pdf" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-blue-500 hover:underline">📥 Download</a>
+                </div>
+            </div>
+            
+            <!-- 20250215 11 uploads gardening & weather -->
             <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="gardening">
                 <a href="assets/downloads/gardening/louisiana-native-tree-guide.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/cover-native-tree-guide.jpg" alt="Make Yourself at Home cover" class="w-24 h-24 object-contain rounded">
+                    <img src="assets/images/cover-native-tree-guide.jpg" alt="Louisiana Native Tree Guide cover" class="w-24 h-24 object-contain rounded">
                 </a>
                 <div class="ml-4">
                     <h3 class="text-xl font-semibold">Louisiana Native Tree Guide</h3>
@@ -102,9 +273,9 @@
                 </div>
             </div>
             
-            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="preparedness">
+            <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="gardening">
                 <a href="assets/downloads/gardening/preserving-food-drying-fruits-and-vegetables.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/cover-preserving-food-drying-fruits-and-vegetables.jpg" alt="FEMA Food and Water in an Emergency cover" class="w-24 h-24 object-contain rounded">
+                    <img src="assets/images/cover-preserving-food-drying-fruits-and-vegetables.jpg" alt="Preserving Food: Drying Fruits &amp; Vegetables cover" class="w-24 h-24 object-contain rounded">
                 </a>
                 <div class="ml-4">
                     <h3 class="text-xl font-semibold">Preserving Food: Drying Fruits &amp; Vegetables</h3>
@@ -116,7 +287,7 @@
 
             <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="weather">
                 <a href="assets/downloads/weather/louisiana-emergency-evacuation-map.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/cover-louisiana-emergency-evacuation-map.jpg" alt="Crawford's Auto Repair Guide cover" class="w-24 h-24 object-contain rounded">
+                    <img src="assets/images/cover-louisiana-emergency-evacuation-map.jpg" alt="Louisiana Emergency Evacuation Map cover" class="w-24 h-24 object-contain rounded">
                 </a>
                 <div class="ml-4">
                     <h3 class="text-xl font-semibold">Louisiana Emergency Evacuation Map</h3>
@@ -128,7 +299,7 @@
             
             <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="gardening">
                 <a href="assets/downloads/gardening/attracting-wildlife-with-native-plants.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/cover-attracting-wildlife-with-native-plants.jpg" alt="Personal Hygiene Practices cover" class="w-24 h-24 object-contain rounded">
+                    <img src="assets/images/cover-attracting-wildlife-with-native-plants.jpg" alt="Attracting Wildlife with Native Plants cover" class="w-24 h-24 object-contain rounded">
                 </a>
                 <div class="ml-4">
                     <h3 class="text-xl font-semibold">Attracting Wildlife with Native Plants</h3>
@@ -140,7 +311,7 @@
 
             <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="weather">
                 <a href="assets/downloads/weather/owlie-hurricanes.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/cover-owlie-hurricanes.jpg" alt="Owlie: Storms Ahead cover" class="w-24 h-24 object-contain rounded">
+                    <img src="assets/images/cover-owlie-hurricanes.jpg" alt="Owlie: Hurricanes Ahead! Weather Book cover" class="w-24 h-24 object-contain rounded">
                 </a>
                 <div class="ml-4">
                     <h3 class="text-xl font-semibold">Owlie: Hurricanes Ahead! Weather Book</h3>
@@ -152,7 +323,7 @@
             
             <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="weather">
                 <a href="assets/downloads/weather/owlie-lightning.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/cover-owlie-lightning.jpg" alt="Owlie: Storms Ahead cover" class="w-24 h-24 object-contain rounded">
+                    <img src="assets/images/cover-owlie-lightning.jpg" alt="Owlie: Lightning Ahead! Weather Book cover" class="w-24 h-24 object-contain rounded">
                 </a>
                 <div class="ml-4">
                     <h3 class="text-xl font-semibold">Owlie: Lightning Ahead! Weather Book</h3>
@@ -164,7 +335,7 @@
 
             <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="weather">
                 <a href="assets/downloads/weather/owlie-floods.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/cover-owlie-floods.jpg" alt="Owlie: Storms Ahead cover" class="w-24 h-24 object-contain rounded">
+                    <img src="assets/images/cover-owlie-floods.jpg" alt="Owlie: Floods Ahead! Weather Book< cover" class="w-24 h-24 object-contain rounded">
                 </a>
                 <div class="ml-4">
                     <h3 class="text-xl font-semibold">Owlie: Floods Ahead! Weather Book</h3>
@@ -176,7 +347,7 @@
 
             <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="preparedness">
                 <a href="assets/downloads/preparedness/map-reading-and-land-navigation.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/cover-map-reading-and-land-navigation.jpg" alt="Make Yourself at Home cover" class="w-24 h-24 object-contain rounded">
+                    <img src="assets/images/cover-map-reading-and-land-navigation.jpg" alt="Map Reading and Land Navigation cover" class="w-24 h-24 object-contain rounded">
                 </a>
                 <div class="ml-4">
                     <h3 class="text-xl font-semibold">Map Reading and Land Navigation</h3>
@@ -188,7 +359,7 @@
             
             <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="preparedness">
                 <a href="assets/downloads/preparedness/3-day-emergency-prep-bug-out-bag.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/cover-3-day-emergency-prep-bug-out-bag.jpg" alt="FEMA Food and Water in an Emergency cover" class="w-24 h-24 object-contain rounded">
+                    <img src="assets/images/cover-3-day-emergency-prep-bug-out-bag.jpg" alt="3-Day Emergency Prep Bug-Out Bag cover" class="w-24 h-24 object-contain rounded">
                 </a>
                 <div class="ml-4">
                     <h3 class="text-xl font-semibold">3-Day Emergency Prep Bug-Out Bag</h3>
@@ -200,7 +371,7 @@
 
             <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="general">
                 <a href="assets/downloads/general/diy-credit-repair.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/cover-diy-credit-repair.jpg" alt="Crawford's Auto Repair Guide cover" class="w-24 h-24 object-contain rounded">
+                    <img src="assets/images/cover-diy-credit-repair.jpg" alt="DIY Credit Repair cover" class="w-24 h-24 object-contain rounded">
                 </a>
                 <div class="ml-4">
                     <h3 class="text-xl font-semibold">DIY Credit Repair</h3>
@@ -212,7 +383,7 @@
             
             <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="general">
                 <a href="assets/downloads/general/self-sufficiency-checklist.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/images/cover-self-sufficiency-checklist.jpg" alt="Personal Hygiene Practices cover" class="w-24 h-24 object-contain rounded">
+                    <img src="assets/images/cover-self-sufficiency-checklist.jpg" alt="Self-Sufficiency Checklist cover" class="w-24 h-24 object-contain rounded">
                 </a>
                 <div class="ml-4">
                     <h3 class="text-xl font-semibold">Self-Sufficiency Checklist</h3>
@@ -222,7 +393,7 @@
                 </div>
             </div>
             
-            <!-- 20250212 -->
+            <!-- 20250212 18 uploads howto & preparedness -->
             <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="howto">
                 <a href="assets/downloads/howto/make-yourself-at-home-habitat-for-humanity.pdf" target="_blank" rel="noopener noreferrer">
                     <img src="assets/images/cover-make-yourself-at-home-habitat-for-humanity.jpg" alt="Make Yourself at Home cover" class="w-24 h-24 object-contain rounded">
@@ -439,7 +610,7 @@
                 </div>
             </div>
             
-            <!-- 20250204 -->
+            <!-- 20250204 25 uploads preparedness & gardening -->
             <div class="resource-item bg-white dark:bg-gray-800 p-4 rounded shadow-md flex" data-category="preparedness">
                 <a href="assets/downloads/preparedness/nato-phonetic-alphabet-codes-and-signals.pdf" target="_blank" rel="noopener noreferrer">
                 <img src="assets/images/cover-nato-phonetic-alphabet-codes-and-signals-alt.jpg" alt="NATO Phonetic Alphabet, Codes, &amp; Signals cover" class="w-24 h-24 object-contain rounded">
