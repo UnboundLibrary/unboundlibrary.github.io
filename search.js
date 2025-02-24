@@ -19,10 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const query = e.target.value.toLowerCase();
 
         items.forEach(item => {
-            const title = item.querySelector("h3").textContent.toLowerCase(); // Use text from the H3
-            const category = item.dataset.category.toLowerCase();
-            const matches = title.includes(query) || category.includes(query);
-            item.style.display = matches ? "flex" : "none";
+            const title = item.querySelector("h3").textContent.toLowerCase(); // Use title text from the H3
+            const category = item.dataset.category.toLowerCase(); // Get the category
+            const descriptionTag = item.querySelector("p.text-sm"); // Get description
+            const description = descriptionTag ? descriptionTag.textContent.toLowerCase() : ""; // Get p tag text safely
+            const detailsSpan = item.querySelector("span.text-sm.text-gray-500"); // Get PDF details
+            const details = detailsSpan ? detailsSpan.textContent.toLowerCase() : ""; // Get span text safely
+            const matches = title.includes(query) || category.includes(query) || description.includes(query) || details.includes(query); // Check if the search query matches any of these: title, category, description, or PDF details
+                item.style.display = matches ? "flex" : "none"; // Show the item if there's a match, otherwise hide it
         });
 
         updateVisibility();
