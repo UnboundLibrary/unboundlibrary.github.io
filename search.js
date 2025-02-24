@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const description = descriptionTag ? descriptionTag.textContent.toLowerCase() : ""; // Get p tag text safely
             const detailsSpan = item.querySelector("span.text-sm.text-gray-500"); // Get PDF details
             const details = detailsSpan ? detailsSpan.textContent.toLowerCase() : ""; // Get span text safely
-            const matches = title.includes(query) || category.includes(query) || description.includes(query) || details.includes(query); // Check if the search query matches any of these: title, category, description, or PDF details
+            const tags = item.dataset.tags ? item.dataset.tags.toLowerCase() : ""; // Get hidden tags to assist search results
+            const matches = title.includes(query) || category.includes(query) || description.includes(query) || details.includes(query) || tags.includes(query); // Check if the search query matches any of these: title, category, description, or PDF details
                 item.style.display = matches ? "flex" : "none"; // Show the item if there's a match, otherwise hide it
         });
 
