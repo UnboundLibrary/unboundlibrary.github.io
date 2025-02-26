@@ -1,0 +1,101 @@
+/* Styling for category dropdown on downloads page */
+.dropdown-item {
+    color: white !important;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between text & count */
+    padding: 10px 15px;
+}
+
+.dropdown-item:hover {
+    background-color: #1e40af !important; /* Adjust hover color */
+    color: white !important;
+}
+
+/* Dark mode adjustments */
+.dark .dropdown-item {
+    color: white !important;
+}
+
+.dark .dropdown-item:hover {
+    background-color: #1544aa !important;
+}
+
+/* Ensure icons and text are aligned */
+.dropdown-item span {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+}
+
+/* Style for the resource count */
+.category-count {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2px 6px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+
+/* Ensure grid structure remains consistent when categories are toggled */
+#categoryGrid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr)); /* Default: Single column */
+    gap: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    #categoryGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns on larger screens */
+    }
+}
+
+#extraCategories {
+    display: none; /* Start hidden */
+}
+
+#extraCategories.hidden {
+    display: none !important;
+}
+
+#extraCategories:not(.hidden) {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr)); /* Default single column */
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    #extraCategories:not(.hidden) {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3-column layout when expanded */
+    }
+}
+
+
+/* Secondary button style for category toggle */
+#toggleCategories {
+    background-color: #374151; /* Darker gray for a subtle look */
+    color: #d1d5db; /* Lighter gray text */
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.875rem; /* Slightly smaller */
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+#toggleCategories:hover {
+    background-color: #4b5563; /* Slightly lighter gray */
+    color: white;
+}
+
+/* Active State (Click Effect) */
+#toggleCategories:active {
+    background-color: #6b7280; /* Even lighter gray */
+}
+
+/* Optional: Add a subtle border */
+#toggleCategories {
+    border: 1px solid #4b5563;
+}
