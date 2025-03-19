@@ -94,15 +94,6 @@
 
 
 
-    /* Fix search bar background */
-    .dark input[type="search"] {
-        background-color: white !important;
-        color: black !important;
-        border: 1px solid #e5e7eb !important;
-    }
-
-
-
 /* Ensure grid structure remains consistent when categories are toggled */
 #categoryGrid {
     display: grid;
