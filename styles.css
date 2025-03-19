@@ -1,4 +1,4 @@
-/* Styling for category dropdown on downloads page */
+/* General Styling for Dropdown Items */
 .dropdown-item {
     color: white !important;
     font-weight: 500;
@@ -8,33 +8,25 @@
     padding: 10px 15px;
 }
 
-/* Ensure default dropdown item background for all themes */
+/* Default Dropdown Menu Background */
 .dropdown-menu {
     background-color: white; /* Default light theme */
     border: 1px solid #e5e7eb;
 }
 
+/* Dark Mode Dropdown */
 .dark .dropdown-menu {
     background-color: #1f2937 !important; /* Dark background */
-    border: 1px solid #374151; /* Optional: subtle border */
+    border: 1px solid #374151;
 }
 
-/* Default dark mode adjustments */
 .dark .dropdown-item {
     color: white !important;
-    background-color: transparent !important; /* Ensure transparency for consistency */
+    background-color: transparent !important; /* Prevents white bg override */
 }
 
-/* Fix for mobile-specific dropdown background */
-@media (max-width: 768px) {
-    .dark .dropdown-menu {
-        background-color: #1f2937 !important; /* Force dark bg */
-    }
-}
-
-/* Hover states */
 .dark .dropdown-item:hover {
-    background-color: #2563eb !important; /* Lighter than default for better contrast */
+    background-color: #2563eb !important; /* Lighter blue hover */
 }
 
 /* Ensure icons and text are aligned */
@@ -58,17 +50,17 @@
     color: white !important;
 }
 
-
-
-/* Force light theme for dropdown and search bar on iOS */
+/* --- iOS FIXES: Force Light Theme for Dropdown & Search Bar on iOS Safari --- */
 @supports (-webkit-touch-callout: none) {
-    .dark .dropdown-menu {
+    .dark .dropdown-menu,
+    .dark input[type="search"] {
         background-color: white !important;
         border: 1px solid #e5e7eb !important;
+        color: black !important;
     }
 
     .dark .dropdown-item {
-        color: black !important; /* Ensures text is visible */
+        color: black !important;
         background-color: white !important;
     }
 
@@ -77,24 +69,13 @@
         color: black !important;
     }
 
-    /* Ensure category count remains visible */
     .dark .category-count {
         background-color: rgba(0, 0, 0, 0.1) !important;
         color: black !important;
     }
-
-    /* Fix search bar background */
-    .dark input[type="search"] {
-        background-color: white !important;
-        color: black !important;
-        border: 1px solid #e5e7eb !important;
-    }
 }
 
-
-
-
-/* Ensure grid structure remains consistent when categories are toggled */
+/* --- Category Grid Layout --- */
 #categoryGrid {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr)); /* Default: Single column */
@@ -128,30 +109,25 @@
     }
 }
 
-
-/* Secondary button style for category toggle */
+/* --- Secondary Button Style for Category Toggle --- */
 #toggleCategories {
-    background-color: #374151; /* Darker gray for a subtle look */
-    color: #d1d5db; /* Lighter gray text */
+    background-color: #374151;
+    color: #d1d5db;
     padding: 8px 16px;
     border-radius: 8px;
-    font-size: 0.875rem; /* Slightly smaller */
+    font-size: 0.875rem;
     font-weight: 500;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border: 1px solid #4b5563;
 }
 
 /* Hover Effect */
 #toggleCategories:hover {
-    background-color: #4b5563; /* Slightly lighter gray */
+    background-color: #4b5563;
     color: white;
 }
 
-/* Active State (Click Effect) */
+/* Active State */
 #toggleCategories:active {
-    background-color: #6b7280; /* Even lighter gray */
-}
-
-/* Optional: Add a subtle border */
-#toggleCategories {
-    border: 1px solid #4b5563;
+    background-color: #6b7280;
 }
