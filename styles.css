@@ -8,25 +8,26 @@
     padding: 10px 15px;
 }
 
-.dropdown-item:hover {
-    background-color: #1e40af !important; /* Adjust hover color */
-    color: white !important;
+/* Ensure default dropdown item background for all themes */
+.dropdown-menu {
+    background-color: white; /* Default light theme */
+    border: 1px solid #e5e7eb;
 }
 
-/* Dark mode adjustments */
-.dark .dropdown-item {
-    color: white !important;
-    background-color: #1f2937 !important; /* Ensures dark bg on mobile */
-}
-
-.dark .dropdown-item:hover {
-    background-color: #1544aa !important;
-}
-
-/* Ensure the entire dropdown menu is dark-themed */
 .dark .dropdown-menu {
     background-color: #1f2937 !important; /* Dark background */
     border: 1px solid #374151; /* Optional: subtle border */
+}
+
+/* Default dark mode adjustments */
+.dark .dropdown-item {
+    color: white !important;
+    background-color: transparent !important; /* Ensure transparency for consistency */
+}
+
+/* Hover states */
+.dark .dropdown-item:hover {
+    background-color: #2563eb !important; /* Lighter than default for better contrast */
 }
 
 /* Ensure icons and text are aligned */
@@ -49,6 +50,7 @@
     background-color: rgba(255, 255, 255, 0.2);
     color: white !important;
 }
+
 
 
 /* Ensure grid structure remains consistent when categories are toggled */
