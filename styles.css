@@ -25,6 +25,13 @@
     background-color: transparent !important; /* Ensure transparency for consistency */
 }
 
+/* Fix for mobile-specific dropdown background */
+@media (max-width: 768px) {
+    .dark .dropdown-menu {
+        background-color: #1f2937 !important; /* Force dark bg */
+    }
+}
+
 /* Hover states */
 .dark .dropdown-item:hover {
     background-color: #2563eb !important; /* Lighter than default for better contrast */
