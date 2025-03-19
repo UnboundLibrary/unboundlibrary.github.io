@@ -60,6 +60,49 @@
 
 
 
+/* Force light theme for dropdown and search bar on iOS */
+@supports (-webkit-touch-callout: none) {
+    .dark .dropdown-menu {
+        background-color: white !important;
+        border: 1px solid #e5e7eb !important;
+    }
+
+    .dark .dropdown-item {
+        color: black !important; /* Ensures text is visible */
+        background-color: white !important;
+    }
+
+    .dark .dropdown-item:hover {
+        background-color: #e5e7eb !important; /* Light gray hover */
+        color: black !important;
+    }
+
+    /* Ensure category count remains visible */
+    .dark .category-count {
+        background-color: rgba(0, 0, 0, 0.1) !important;
+        color: black !important;
+    }
+
+    /* Fix search bar background */
+    .dark input[type="search"] {
+        background-color: white !important;
+        color: black !important;
+        border: 1px solid #e5e7eb !important;
+    }
+}
+
+
+
+
+    /* Fix search bar background */
+    .dark input[type="search"] {
+        background-color: white !important;
+        color: black !important;
+        border: 1px solid #e5e7eb !important;
+    }
+
+
+
 /* Ensure grid structure remains consistent when categories are toggled */
 #categoryGrid {
     display: grid;
