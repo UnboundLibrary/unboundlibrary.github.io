@@ -1,10 +1,10 @@
 /* General Styling for Dropdown Items */
 .dropdown-item {
-    color: white !important;
+    color: black !important; /* Ensures visibility in light mode */
     font-weight: 500;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space between text & count */
+    justify-content: space-between;
     padding: 10px 15px;
 }
 
@@ -12,6 +12,10 @@
 .dropdown-menu {
     background-color: white; /* Default light theme */
     border: 1px solid #e5e7eb;
+}
+
+.dropdown-item:hover {
+    background-color: #e5e7eb !important; /* Light gray hover for contrast */
 }
 
 /* Dark Mode Dropdown */
@@ -22,7 +26,6 @@
 
 .dark .dropdown-item {
     color: white !important;
-    background-color: transparent !important; /* Prevents white bg override */
 }
 
 .dark .dropdown-item:hover {
@@ -50,13 +53,18 @@
     color: white !important;
 }
 
-/* --- iOS FIXES: Force Light Theme for Dropdown & Search Bar on iOS Safari --- */
+/* --- Fix for iOS Safari: Force Light Theme for Category Button & Search Bar --- */
 @supports (-webkit-touch-callout: none) {
-    .dark .dropdown-menu,
+    .dark #categoryButton, 
     .dark input[type="search"] {
         background-color: white !important;
-        border: 1px solid #e5e7eb !important;
         color: black !important;
+        border: 1px solid #e5e7eb !important;
+    }
+
+    .dark .dropdown-menu {
+        background-color: white !important;
+        border: 1px solid #e5e7eb !important;
     }
 
     .dark .dropdown-item {
@@ -65,15 +73,34 @@
     }
 
     .dark .dropdown-item:hover {
-        background-color: #e5e7eb !important; /* Light gray hover */
-        color: black !important;
-    }
-
-    .dark .category-count {
-        background-color: rgba(0, 0, 0, 0.1) !important;
+        background-color: #e5e7eb !important;
         color: black !important;
     }
 }
+
+
+/* --- Fix Category Button Styling (Dark Theme Defaults) --- */
+#categoryButton {
+    background-color: #374151;
+    color: #d1d5db;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border: 1px solid #4b5563;
+}
+
+/* Hover & Active States */
+#categoryButton:hover {
+    background-color: #4b5563;
+    color: white;
+}
+
+#categoryButton:active {
+    background-color: #6b7280;
+}
+
 
 /* --- Category Grid Layout --- */
 #categoryGrid {
